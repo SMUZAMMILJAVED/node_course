@@ -5,7 +5,7 @@ router.get('/',(req,res)=>{
 // res.send(
 //     "<form action='/form/submit' method='POST'><input name='data'/><button>submit</button></form>"
 // );
-res.sendFile(path.join(process.cwd(),'view','form.html'));
+res.render("form",{user:req.query.name ||"User"});
 });
 router.post('/submit',(req,res)=>{
    res.send(req.body);
