@@ -1,0 +1,8 @@
+npm i -g pm2
+pm2 start index.js
+pm2 list
+pm2 delete index.js
+pm2 start index.js -i 3
+pm2 start index.js -i max
+pm2 logs
+pm2 delete all
