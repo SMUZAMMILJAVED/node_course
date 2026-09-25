@@ -1,0 +1,24 @@
+`docker --version` — Docker ka installed version check karta hai.
+
+`wsl --version` — WSL ka version aur system details check karta hai.
+
+`docker ps` — Sirf running containers show karta hai.
+
+`docker ps -a` — Running aur stopped/exited containers show karta hai.
+
+`docker run hello-world` — Docker working hai ya nahi test karta hai.
+
+`docker pull nginx` — Docker Hub se Nginx image download karta hai.
+
+`docker image` — Docker images ke available commands show karta hai.
+
+`docker images` — Computer mein available images show karta hai.
+
+`docker run nginx` — Nginx image se container create aur run karta hai.
+
+`docker run -p 8080:80 nginx` — Nginx container ko run karke port 8080 ko container ke port 80 se map karta hai.
+
+docker build -t my-node-app . — Dockerfile se Node.js application ki Docker image build karta hai.
+
+docker run -p 4000:4000 my-node-app — Node.js image se container run karta hai aur port 4000 map karta hai.
+
